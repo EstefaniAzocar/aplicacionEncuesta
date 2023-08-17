@@ -1,0 +1,99 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.home_container{
+    width: 30%;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    background-color:rgb(250, 240, 240);
+    padding: 10px;
+}
+
+.title{
+    font-size: 34px;
+    background: linear-gradient(90deg, hsla(263, 52%, 62%, 1) 0%, hsla(319, 81%, 65%, 1) 100%);
+    color: white;
+}
+.subtitle{
+    width: 90%;
+    font-family: 'Times New Roman', Times, serif;
+    justify-items: center;
+    text-align: center;
+}
+
+.contact-button{
+    text-decoration: none;
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    letter-spacing: 3px;
+    position: relative;
+    text-align: center;
+    color: #af599e;
+    margin-top: 20px;
+}
+.contact-button div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition:  all .3s ease-in-out;
+    z-index: 1;
+    
+}
+.contact-button span.bg{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: -5px;
+    top: 0;
+    transition: all .3s ease-in-out;
+    background-color: #E261C3;
+    transform: skewX(-19deg);
+    
+}
+.contact-button:hover span.bg{
+    width: 110%;
+}
+.contact-button span.base{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border: 1px solid #af599e;;
+    box-sizing: border-box;
+    
+}
+.contact-button span.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    
+}
+.contact-button:hover span.text{
+    color: white;
+}
+  
+@media screen and (max-width: 950px) {
+   .home_container{
+    width: 100%;
+    min-height: 100vh;
+    background-color:rgb(250, 240, 240);
+   }
+}
+    
